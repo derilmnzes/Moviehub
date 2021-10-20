@@ -1,0 +1,20 @@
+.drawer{
+    width: 250px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    z-index: 100;
+
+    &__container{
+        position: relative;
+    }
+    &__close{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+    
+    }
+}

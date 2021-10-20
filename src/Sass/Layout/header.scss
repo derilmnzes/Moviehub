@@ -1,0 +1,55 @@
+.header{
+    width: 100%;
+    padding: 20px 0px;
+
+    &__container{
+        display: flex;
+        padding: 0 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__toggle{
+        display: flex;
+        width: 100px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .menubar{
+            display: none;
+            @media screen and (max-width: $medium) {
+                display:block;
+              }
+        }
+    }
+
+    &__nav_link ul{
+        display: flex;
+       align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+
+        li{
+            margin: 0 10px;
+            list-style: none;
+            
+        }
+        @media screen and (max-width: $medium) {
+            display: none;
+          }
+    }
+    &__search_bar{
+        position: relative;
+ input{
+     padding: 10px;
+     border-radius: 50px;
+     border: 1px solid rgb(202, 196, 196);
+ }
+        svg{
+            position: absolute;
+            right: 10px;
+            top: 11px;
+            color: rgb(133, 129, 129);
+        }
+    }
+}
